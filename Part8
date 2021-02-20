@@ -1,0 +1,24 @@
+package week3CodingAssignmentPart8;
+
+public class Week3CodingAssignmentPart8 {
+
+	public static void main(String[] args) {
+		// Method that takes 2 Strings, firstName and lastName, and returns a fullName
+		// with a space in the middle
+
+		String firstName = "Missy";
+		String lastName = "Bloom";
+		String fullName = createFullName(firstName, lastName);
+		String fullName2 = createFullName("Sam", lastName);
+
+		System.out.println(fullName);
+		System.out.println(fullName2);
+	}
+
+	public static String createFullName(String x, String y) {
+		String fullName = x + " " + y;
+		return fullName;
+
+	}
+
+}
