@@ -1,0 +1,45 @@
+package week3CodingAssignmentSteps7and10;
+
+public class Week3CodingAssignmentSteps7and10 {
+
+	public static void main(String[] args) {
+
+		double[] grades = new double[5];
+		grades[0] = 88.3;
+		grades[1] = 95.0;
+		grades[2] = 70.6;
+		grades[3] = 100.0;
+		grades[4] = 60.3;
+
+		System.out.println("Step 10: The average of all the doubles in this array are: " + calculateAverage(grades));
+
+		System.out.println("Step 7: " + multiplyString("Hello", 3));
+	}
+
+	/*
+	 * Step 10: Method that Takes an array of doubles and returns the average of all
+	 * elements in the array
+	 */
+	public static double calculateAverage(double[] numbers) {
+		double sum = 0;
+		for (double number : numbers) {
+			sum += number;
+		}
+		return sum / numbers.length;
+	}
+
+	/*
+	 * Step 7: Method that Takes a String, word, and an int, n, as arguments and
+	 * returns the String concatenated with itself n number of times
+	 */
+
+	public static String multiplyString(String str, int num) {
+		String result = "";
+		for (int n = 0; n < num; n++) {
+			result += str;
+		}
+		return result;
+
+	}
+
+}
