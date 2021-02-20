@@ -1,0 +1,42 @@
+package week3CodingAssignmentSteps1aThrough1c;
+
+public class Week3CodingAssignmentSteps1aThrough1c {
+
+	public static void main(String[] args) {
+
+		/*
+		 * week 3 coding assignment step 1.) Create an array of int called ages that
+		 * contains the following values: 3, 9, 23, 64, 2, 8, 28, 93. 1b.)
+		 * 
+		 * Step 1b.) Add a new age to your array and repeat the step above to ensure it
+		 * is dynamic (works for arrays of different lengths).
+		 */
+
+		int[] ages = { 3, 9, 23, 64, 2, 8, 28, 93, 70 };
+	
+
+		/*
+		 * Step 1a.) Programmatically subtract the value of the first element in the
+		 * array from the value in the last element of * the array (i.e. do not use
+		 * ages[7] in your code). Print the result to the console.
+		 */
+
+		int i = ages[ages.length - 1] - ages[0];
+		System.out.println("Step 1a.) The last age minus the first age in this array is: " + i);
+
+		/*
+		 * Step 1c.) Use a loop to iterate through the array and calculate the average
+		 * age. Print the result to the console.
+		 */
+
+		int y = 1;
+		int x = ages[ages.length - y];
+		int total = x + (ages[y + 2]);
+		double average = total / ages.length;
+		System.out.println("Step 1b.) The last age you added to this array is: " + x);
+
+		System.out.println("Step 1c) The average age in this array is: " + average);
+
+	}
+
+}
