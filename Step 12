@@ -1,0 +1,22 @@
+package week3CodingAssignmentStep12;
+
+// week 3 Coding Assignment - Step 12: Will Buy Drink Method
+
+public class Week3CodingAssignmentStep12 {
+
+	public static void main(String[] args) {
+
+		boolean isHotOutside = true;
+		double moneyInPocket = 20.00;
+		boolean willBuyDrink = false;
+
+		if (isHotOutside && (moneyInPocket > 10.50)) {
+			willBuyDrink = true;
+			System.out.println(willBuyDrink
+					+ ": It is hot outside and I have more than $10.50 in my pocket, so I will buy a drink.");
+		} else {
+			System.out.println(willBuyDrink
+					+ ": I will not buy a drink because it is not hot outside or I have less than $10.50 in my pocket.");
+		}
+	}
+}
