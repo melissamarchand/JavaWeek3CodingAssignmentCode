@@ -1,0 +1,52 @@
+package week3CodingAssignmentStep11;
+
+public class Week3CodingAssignmentStep11 {
+
+	public static void main(String[] args) {
+
+		double[] numbers = { 3.5, 6.0, 2.1, 9.5, 10.2, 3, 9.9, 16.1, 22.7 };
+		double[] numbers2 = { 1.8, 3.7, 7, 6.9, 10, 5, 7.33, 12.5, 33.3 };
+		boolean avgNumbersLargerAvgNumbers2 = false;
+
+		/*
+		 * Week 3 Coding Assignment Step 11: Write a method that takes two arrays of
+		 * double and returns true if the average of the elements in the first array is
+		 * greater than the average of the elements in the second array.
+		 * 
+		 */
+		double average1 = 0;
+		double average2 = 0;
+		double sum1 = 0;
+		double sum2 = 0;
+
+		for (double number : numbers) {
+			sum1 += number;
+		}
+		System.out.println("The total sum of the numbers in the First Array is: " + sum1);
+
+		average1 = sum1 / numbers.length;
+		System.out.println("The average of all the numbers in the First array is: " + average1);
+		System.out.println();
+
+		for (double number2 : numbers2) {
+			sum2 += number2;
+		}
+		System.out.println("The total sum of the numbers in the Second Array is: " + sum2);
+		average2 = sum2 / numbers2.length;
+		System.out.println("The average of all the numbers in the Second Array is: " + average2);
+		System.out.println();
+
+		if (average1 > average2) {
+
+			avgNumbersLargerAvgNumbers2 = true;
+			System.out.println(avgNumbersLargerAvgNumbers2
+					+ " : the average of the elements in the first array is greater than the average of the elements in the second array.");
+		} else {
+			avgNumbersLargerAvgNumbers2 = false;
+			System.out.println(avgNumbersLargerAvgNumbers2 + " : the average of the elements in the first array ("
+					+ average1 + ") is NOT greater than the average (" + average2
+					+ ") of the elements in the second array.");
+		}
+
+	}
+}
