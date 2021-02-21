@@ -1,0 +1,55 @@
+public class Week3CodingAssignmentSteps2and5and6 {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Week 3 Coding Assignment Steps 2, 5, and 6
+		 * 
+		 * Step 2) Create an array of String called names that contains the following
+		 * values: “Sam”, “Tommy”, “Tim”, “Sally”, “Buck”, “Bob”.
+		 */
+
+		String[] names = { "Sam", "Tommy", "Tim", "Sally", "Buck", "Bob" };
+		int nameLengths = 0;
+		double averageLetters;
+
+		/*
+		 * Step 2a) Use a loop to iterate through the array and calculate the average
+		 * number of letters per name. Print the result to the console.
+		 */
+
+		/*
+		 * Step 5) Create a new array of int called nameLengths. Write a loop to iterate
+		 * over the previously created names array and add the length of each name to
+		 * the nameLengths array.
+		 */
+
+		/*
+		 * Step 6) Write a loop to iterate over the nameLengths array and calculate the
+		 * sum of all the elements in the array. Print the result to the console.
+		 */
+
+		for (String name : names) {
+			System.out.println(name + " has " + name.length() + " letters in it.");
+			nameLengths += name.length();
+
+			System.out.println("The total number of letters after adding this name is: " + nameLengths);
+		}
+		averageLetters = nameLengths / names.length;
+		{
+			System.out.println("The average number of letters per name in this array is: " + averageLetters);
+			System.out.println("The sum of all the elements in the nameLengths array is: " + nameLengths);
+		}
+
+		/*
+		 * Step 2b) Use a loop to iterate through the array again and concatenate all
+		 * the names together, separated by spaces, and print the result to the console
+		 */
+
+		System.out.print("All of the names are: ");
+		for (String name : names) {
+			System.out.print(name + " ");
+
+		}
+	}
+}
